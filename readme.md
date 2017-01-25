@@ -1,0 +1,1 @@
+Dojo Assignments contains folder iOS, MEAN, netCore, Python, Ruby, and WebFundamentals. Within those folders, are assignments that have been completed, relating to the topic of the folder it is saved in.
