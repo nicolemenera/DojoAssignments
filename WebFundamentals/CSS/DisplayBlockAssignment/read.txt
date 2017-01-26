@@ -1,0 +1,11 @@
+Last login: Tue Jan 24 16:10:47 on ttys000
+Jamess-MacBook-Air:~ Nikki$ cd desktop
+Jamess-MacBook-Air:desktop Nikki$ cd DojoAssignments
+Jamess-MacBook-Air:DojoAssignments Nikki$ cd WebFundamentals
+Jamess-MacBook-Air:WebFundamentals Nikki$ cd CSS
+Jamess-MacBook-Air:CSS Nikki$ mkdir DisplayBlockAssignment
+Jamess-MacBook-Air:CSS Nikki$ cd DisplayBlockAssignment
+Jamess-MacBook-Air:DisplayBlockAssignment Nikki$ touch index.html
+Jamess-MacBook-Air:DisplayBlockAssignment Nikki$ touch style.css
+Jamess-MacBook-Air:DisplayBlockAssignment Nikki$ touch read.txt
+Jamess-MacBook-Air:DisplayBlockAssignment Nikki$ 

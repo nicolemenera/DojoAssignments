@@ -1,0 +1,69 @@
+Jamess-MacBook-Air:DojoAssignments Nikki$ git init
+Initialized empty Git repository in /Users/Nikki/Desktop/DojoAssignments/.git/
+Jamess-MacBook-Air:DojoAssignments Nikki$ git add .
+Jamess-MacBook-Air:DojoAssignments Nikki$ git commit -m "made dojo assigments folder"
+[master (root-commit) ccde508] made dojo assigments folder
+ 18 files changed, 208 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 MEAN/about.txt
+ create mode 100644 Python/about.txt
+ create mode 100644 Ruby/about.txt
+ create mode 100644 WebFundamentals/.DS_Store
+ create mode 100644 WebFundamentals/CSS/about.txt
+ create mode 100644 WebFundamentals/Git/DojoAssignmentRepo.txt
+ create mode 100644 WebFundamentals/Git/about.txt
+ create mode 100644 WebFundamentals/Git/gitpractice.txt.rtf
+ create mode 100644 WebFundamentals/HTML/.DS_Store
+ create mode 100644 WebFundamentals/HTML/Screen Shot 2017-01-24 at 12.57.07 PM.png
+ create mode 100644 WebFundamentals/HTML/about.txt
+ create mode 100644 WebFundamentals/HTML/assignment.txt.pages
+ create mode 100644 WebFundamentals/HTML/indentation.html
+ create mode 100644 WebFundamentals/Javascript/about.txt
+ create mode 100644 WebFundamentals/about.txt
+ create mode 100644 iOS/about.txt
+ create mode 100644 netCore/about.txt
+Jamess-MacBook-Air:DojoAssignments Nikki$ git remote add origin https://github.com/nicolemenera/DojoAssignments.git
+Jamess-MacBook-Air:DojoAssignments Nikki$ git push origin master
+Username for 'https://github.com': nicolemenera 
+Password for 'https://nicolemenera@github.com': 
+Counting objects: 11, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (11/11), 289.81 KiB | 0 bytes/s, done.
+Total 11 (delta 0), reused 0 (delta 0)
+To https://github.com/nicolemenera/DojoAssignments.git
+ * [new branch]      master -> master
+Jamess-MacBook-Air:DojoAssignments Nikki$ mkdir readme.md
+Jamess-MacBook-Air:DojoAssignments Nikki$ touch readme.md
+Jamess-MacBook-Air:DojoAssignments Nikki$ git log
+commit ccde508a93bcc7e0f72419fa36d26d2268f578d0
+Author: nicolemenera <nicolemenera@gmail.com>
+Date:   Tue Jan 24 16:31:04 2017 -0800
+
+    made dojo assigments folder
+Jamess-MacBook-Air:DojoAssignments Nikki$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+Jamess-MacBook-Air:DojoAssignments Nikki$ git add .
+Jamess-MacBook-Air:DojoAssignments Nikki$ git commit -m "added readme.md file"
+[master 05c696e] added readme.md file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.md
+Jamess-MacBook-Air:DojoAssignments Nikki$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+Jamess-MacBook-Air:DojoAssignments Nikki$ git remote add origin https://github.com/nicolemenera/DojoAssignments.git
+fatal: remote origin already exists.
+Jamess-MacBook-Air:DojoAssignments Nikki$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 413 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local objects.
+To https://github.com/nicolemenera/DojoAssignments.git
+   ccde508..05c696e  master -> master
+Jamess-MacBook-Air:DojoAssignments Nikki$ git status
+On branch master
+nothing to commit, working directory clean
+Jamess-MacBook-Air:DojoAssignments Nikki$ 
