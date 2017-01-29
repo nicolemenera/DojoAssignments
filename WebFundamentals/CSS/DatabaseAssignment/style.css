@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper {
+  width: 970px;
+  height: 100%;
+  margin: 5px;
+  background-color: grey;
+}
+
+.header {
+  display: block;
+  width: 970px;
+  background-color: pink;
+}
+
+#database-header {
+  height: 100px;
+  width: 200px;
+}
