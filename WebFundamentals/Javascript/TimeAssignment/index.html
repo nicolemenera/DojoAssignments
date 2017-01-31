@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script>
+
+
+function timeAssignment(MINUTE, HOUR, PERIOD) {
+
+  if ( MINUTE < 30 ) {
+    console.log("It's just after");
+
+  }
+
+  if ( MINUTE >= 30 && MINUTE < 60 ){
+    console.log("It's almost");
+  }
+
+
+    if(HOUR === 8){
+    console.log("8");
+  } else {
+    console.log("7");
+  }
+
+
+  if ( PERIOD === "PM" ) {
+    console.log("in the evening")
+  
+  } else {
+
+    console.log("in the morning");
+  }
+
+  // console.log(MINUTE, HOUR, PERIOD);
+}
+
+
+timeAssignment(50, 8, 'PM');
+    
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>

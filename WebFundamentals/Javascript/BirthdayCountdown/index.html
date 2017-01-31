@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <script>
+
+
+function birthdayCountdown() {
+  var count = 60;
+  var sadMessage= " long, depressing days until my birthday :()";
+  var happyMessage= " FRIGGIN' DAYS UNTIL MY FRIGGIN' BIRTHDAY!!!";
+  var ecxitedMessage= " DAYS UNTIL MY BIRTHDAY, ZOMGGG!";
+  var dayBeforeMessage= "MY BIRTHDAY IS TOMORROW!!! YEAH BOIIII!!!!!"
+  var birthayMessage= " HAPPY BIRTHDAY YOU BEAUTIFUL BEAST!!!!!!!"
+
+for ( var i = 60; i >= 0; i-- ) {
+
+  if ( count > 30 ) {
+    console.log( count + sadMessage );
+  }
+
+  if ( count <= 30 && count > 5 ) {
+    console.log( count + happyMessage );
+  }
+
+  if ( count <= 5 && count > 1 ) {
+    console.log( count + excitedMessage );
+  }
+
+  if ( count === 1 ) {
+    console.log( excitedMessage );
+  }
+  if ( count === 0 ) {
+    console.log( birthdayMessage );
+  }
+}
+}
+  
+
+
+    </script>
+  </head>
+  <body>
+
+
+
+  </body>
+</html>
