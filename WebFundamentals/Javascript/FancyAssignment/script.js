@@ -1,0 +1,13 @@
+var arr = ["James", "Jill", "Jane", "Jack"];
+
+function fancyNames(arr, symbol, reversed) {
+  if (reversed) {
+    arr.reverse();
+  }
+
+  for ( var idx = 0; idx < arr.length; idx++ ) {
+    console.log(idx + ' ' + symbol +  ' ' + arr[idx]);
+  }
+}
+
+fancyNames(arr, '->', true);
