@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <title>JQuery Functions</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('h2').hide();
+          $('.title').click(function() {
+            $('.title').slideUp(function() {
+              $('h2').fadeIn( 2000, function() {
+              });
+            });
+          });
+          $( '.happy' ).hover(function(){
+            $( this ).css('background-color', 'yellow');
+            }, function() {
+            $( this ).css('background-color', 'white');
+          }
+          );
+          $( '.sad' ).hover(function(){
+            $( this ).css('background-color', 'blue');
+            }, function() {
+            $( this ).css('background-color', 'white');
+          }
+          );
+          $( '.mad' ).hover(function(){
+            $( this ).css('background-color', 'red');
+            }, function() {
+            $( this ).css('background-color', 'white');
+          }
+          );
+          $( '.smile' ).hover(function(){
+            $( this ).text('=)');
+            }, function() {
+            $( this ).text('Smile');
+          }
+          );
+          $( '.frown' ).hover(function(){
+            $( this ).text('=(');
+            }, function() {
+            $( this ).text('Frown');
+          }
+          );
+          $( '.yell' ).hover(function(){
+            $( this ).text('>=O');
+            }, function() {
+            $( this ).text('Yell');
+          }
+          );
+
+          $('.tina').click(function() {
+            $('p').append('Tina!');
+          });
+
+
+
+
+        $('#punch').click(function() {
+          alert('OUCH! You punched me!');
+        });
+      });
+    </script>
+  </head>
+  <body>
+  <div class="wrapper">
+    <div class="top">
+      <header class="title">Click Everything!</header>
+      <h2>Welcome!</h2>
+    </div>
+    <div class="middle-container">
+      <ul class="moods">
+        <li class="happy">Happy</li>
+        <li class="sad">Sad</li>
+        <li class="mad">Mad</li>
+      </ul>
+      <img src="https://placeimg.com/640/480/any" id="kitten" alt="kitten"/>
+      <ul class="moods">
+        <li class="smile">Smile</li>
+        <li class="frown">Frown</li>
+        <li class="yell">Yell</li>
+      </ul>
+
+    </div>
+    <footer>
+      <h3 class="tina">Click to add more Tina!</h3>
+        <p>Hi boys. I'm Tina. Not if you're a fish. 
+          Our toaster is also confused. It doesn't know where bagels go. 
+          Everything I know to be true just went out the window. 
+          There is one place I like to go. The boys' locker room. 
+          You can only see up to their ankles.</p>
+        <section>
+          <button id="click">CLICK</button>
+          <button id="push">PUSH</button>
+          <button id="punch">PUNCH</button>
+        </section>
+    </footer>
+  </div>
+  </body>
+</html>
