@@ -7,36 +7,15 @@
     <script type="text/javascript">
     $(document).ready(function() {
 
-      $('#one').click(function() {
-            $(this).css('visibility', 'hidden');
-          });
-      $('#two').click(function() {
-            $(this).css('visibility', 'hidden');
-          });
-      $('#three').click(function() {
-            $(this).css('visibility', 'hidden');
-          });
-      $('#four').click(function() {
-            $(this).css('visibility', 'hidden');
-          });
-      $('#five').click(function() {
-            $(this).css('visibility', 'hidden');
-          });
-      $('#six').click(function() {
-            $(this).css('visibility', 'hidden');
-          });
-      $('#seven').click(function() {
-            $(this).css('visibility', 'hidden');
-          });
-      $('#eight').click(function() {
-            $(this).css('visibility', 'hidden');
-          });
+      $('.tina').each(function() {
+        $(this).click(function() {
+          $(this).css('visibility', 'hidden');
+        });
+      });
 
       $('button').click(function() {
-        $('img').css('visibility', 'initial');
-      })
-      
-
+        $('.tina').css('visibility', 'visible');
+      });
     });
     
 
@@ -44,14 +23,14 @@
   </head>
   <body>
     <div>
-      <img src="tinaicon.png" id="one" alt="Tina Belcher">
-      <img src="tinaicon.png" id="two" alt="Tina Belcher">
-      <img src="tinaicon.png" id="three"alt="Tina Belcher">
-      <img src="tinaicon.png" id="four" alt="Tina Belcher">
-      <img src="tinaicon.png" id="five" alt="Tina Belcher">
-      <img src="tinaicon.png" id="six" alt="Tina Belcher">
-      <img src="tinaicon.png" id="seven" alt="Tina Belcher">
-      <img src="tinaicon.png" id="eight" alt="Tina Belcher">
+      <img src="tinaicon.png" class="tina" alt="Tina Belcher">
+      <img src="tinaicon.png" class="tina" alt="Tina Belcher">
+      <img src="tinaicon.png" class="tina" alt="Tina Belcher">
+      <img src="tinaicon.png" class="tina" alt="Tina Belcher">
+      <img src="tinaicon.png" class="tina" alt="Tina Belcher">
+      <img src="tinaicon.png" class="tina" alt="Tina Belcher">
+      <img src="tinaicon.png" class="tina" alt="Tina Belcher">
+      <img src="tinaicon.png" class="tina" alt="Tina Belcher">
     </div>
     <button>Reset</button>
   </body>
