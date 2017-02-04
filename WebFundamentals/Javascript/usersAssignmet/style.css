@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.container {
+  width: 500px;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: black;
+  display: block;
+  margin: 10px;
+}
+
+.info {
+  height: 50px;
+  width: 500px;
+  border: 1px solid black;
+  font-size: 16px;
+  margin: 40px 0 40px 0;
+}
+
+thead {
+  margin: 0 auto;
+}
+
+th {
+  font-size: 16px;
+  margin: center;
+  padding: 5px 0 5px 0;
+}
+
+h2 {
+  display: block;
+  width: 360px;
+  font-size: 28px;
+  border-bottom: 2px solid gray;
+}
+
+form {
+  display: block;
+  height: 400px;
+  margin-top: 0 auto;
+  color: black;
+}
+
+fieldset {
+  height: 250px;
+  font-size: 16px;
+  display: block;
+  color: black;
+  border-style: none;
+  text-align: right;
+}
+
+ul {
+  display: block;
+  width: 350px;
+  font-size: 16px;
+  color: black;
+  margin: 20px 3px 35px 10px;
+  list-style-type: none;
+}
+
+li {
+  height: 30px;
+  color: black;
+  font-size: 16px;
+}
+
+input[type=text] {
+  border: 1px solid black;
+  width: 200px;
+  height: 18px;
+  font-size: 16px;
+  vertical-align: center;
+  padding-left: 5px;
+}
+
+#smallButton {
+  text-align: right;
+  width: 360px;
+}
+
+#addUser {
+  display: inline-block;
+  width: 75px;
+  height: 18px;
+  color: black;
+  font-size: 14px;
+  margin: 2px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background: linear-gradient(white, lightgrey);
+}
