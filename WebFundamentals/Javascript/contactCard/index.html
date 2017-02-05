@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script> 
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $(document).on("click", ".card", function() {
+        $(this).find('div').toggle();
+      });
+      $('#submit').click(function(e) {
+        e.preventDefault();
+        var firstName=$('#firstName').val();
+        var lastName=$('#lastName').val();
+        var info=$('textarea').val();
+        var contactCard='<div class="card"><div class="contactName"><h3>' + firstName + ' ' + lastName + '</h3><p>Click for description!</p></div><div class="contactInfo"><p>' + info + '</p></div></div>';
+        $('#contactContainer').append(contactCard);
+      })
+    });
+    </script>
+   </head>
+  <body>
+    <div class="wrapper">
+      <header>Contact Cards</header>
+      <div class="leftContainer">
+        <form>
+          <div class="usersName">
+            <ul>
+              <li><input type="text" placeholder="First Name" id="firstName"></li>
+              <li><input type="text" placeholder="Last Name" id="lastName"></li>
+            </ul>
+          </div>
+          <h2>Info</h2>
+          <div class="userDescription">
+            <textarea placeholder="Tell me about yourself!"></textarea>
+          </div>
+          <button id="submit">Add my info!</button>
+        </form>
+      </div>
+      <div id="contactContainer">
+      </div>
+    </div>
+  </body>
+</html>
