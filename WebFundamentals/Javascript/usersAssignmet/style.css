@@ -20,6 +20,7 @@
   border: 1px solid black;
   font-size: 16px;
   margin: 40px 0 40px 0;
+  padding: 15px;
 }
 
 thead {
@@ -27,6 +28,12 @@ thead {
 }
 
 th {
+  font-size: 16px;
+  margin: center;
+  padding: 5px 0 5px 0;
+}
+
+td {
   font-size: 16px;
   margin: center;
   padding: 5px 0 5px 0;
@@ -77,6 +84,7 @@ input[type=text] {
   font-size: 16px;
   vertical-align: center;
   padding-left: 5px;
+  color: black;
 }
 
 #smallButton {

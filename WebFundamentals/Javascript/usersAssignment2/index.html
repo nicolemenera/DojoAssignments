@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('button').click(function(e) {
+          e.preventDefault();
+          var first=$('#firstName').val();
+          var last=$('#lastName').val();
+          var email=$('#emailAddress').val();
+          var phone=$('#phoneNumber').val();
+          var user = '<tr> <td>' + first + '</td> <td>' + last + '</td> <td>' + email + '</td> <td>' + phone + '</td> </tr>';
+
+          $('#users').append(user);
+
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email Address</th>
+          <th>Contact #</th>
+        </tr>
+        <tbody id="users">
+          
+        </tbody>
+    </table>
+    <form>
+      <div>
+        <label>First Name:</label>
+        <input id="firstName" type="text" placeholder="First Name">
+      </div>
+      <div>
+        <label>Last Name:</label>
+        <input id="lastName" type="text" placeholder="Last Name">
+      </div>
+      <div>
+        <label>Email Address:</label>
+        <input id="emailAddress" type="text" placeholder="Email Address">
+      </div>
+      <div>
+        <label>Contact No.:</label>
+        <input id="phoneNumber" type="text" placeholder="Contact No.">
+      </div>
+        <button>Add User</button>
+    </form>
+  </body>
+</html>
