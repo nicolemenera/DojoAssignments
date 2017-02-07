@@ -1,0 +1,20 @@
+pip list     this installed packages and editables. There are different commands you can use, and I believe they are used like this…
+-o, —-outdated   (this will give you a list of outdated packages
+-u, —-uptodate   (this will give you a list of uptodate packages
+-e, —-editable   (editable)
+and so forth.
+
+
+Running pip install Django after you have already installed it will just let you know that this requirement has already been satisfied.
+
+pip freeze outputs installed packages in requirements format
+
+When I run pip freeze > requirements.txt (while in my Desktop) it just shows all the files that are in my desktop.
+
+pip uninstall Django uninstalled Django.
+
+Well clearly NOTHING happens when I put pip show Django, because YOU JUST HAD ME UNINSTALL IT. Now I have to re install it….
+
+Now AFTER I reinstalled Django (because you made me uninstall it), when I type in pip show Django, it just tells me al about the version of Django I have downloaded.
+
+pip search flask just searches for PyPi (the Python Package Index) who name or summary contains whatever you put in the command line next to it. Example: pip search flask.
