@@ -1,0 +1,23 @@
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <img src="{{ url_for('static', filename='img/') }}">
+  </head>
+  <body>
+    <h1>Dojo Form</h1>
+      <form>
+        <div class="usersName">
+        <ul>
+          <li><input type="text" placeholder="First Name" id="firstName"></li>
+          <li><input type="text" placeholder="Last Name" id="lastName"></li>
+        </ul>
+        </div>
+        <h2>Info</h2>
+        <div class="userDescription">
+          <textarea placeholder="Tell me about yourself!"></textarea>
+        </div>
+        <button id="submit">Add my info!</button>
+      </form>
+  </body>
+</html>
