@@ -1,6 +1,15 @@
 <html>
   <head></head>
   <body>
-    <h1>{{ count_this_path() }}</h1>
+    <h1>This is my website!</h1>
+    <h3>You have visited it {{session.counter}} times!</h3>
+    <br>
+    <form action ='/ninja'>
+      <input type="submit" value="ninja + 2">
+    </form>
+    <form action ='/clear'>
+      <input type="submit" value="reset">
+    </form>
   </body>
 </html>
+      

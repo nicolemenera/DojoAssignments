@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buildingBlock {
+
+}
+
+#farm, #cave, #house, #casino {
+  display: inline;
+}
+
+form {
+  display: block;
+  width: 400px;
+}
+
+form label {
+  font-size: 18px;
+}
+
+form input [type="text"] {
+  width: 500px;
+  height: 300px;
+}
