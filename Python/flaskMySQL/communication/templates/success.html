@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Results</title>
+  </head>
+  <body>
+    <h3>The email address you entered</h3>{{request.form['email']}}<h3>Is a VALID email address! Thank you!</h3>
+    <hr>
+      {% for user in users %}
+      <p>Email: {{ user ['email'] }}</p>
+      <p>Created At: {{ user ['create_time']}}</p>
+      <p>Update At: {{ user ['update_time']}}</p>
+      <form action='delete' method='post'>
+        <input type="hidden" value={{ user ['email'] }} name="email"><br />
+        <input type='submit' value='delete'>
+      </form>
+      <hr>
+      {% endfor %}
+  </body>
+</html>
+
