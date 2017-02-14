@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>registration form</title>
+    {% include 'style.css' %}
+  </head>
+  <body>
+    <h1>Please Register Below</h1>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="flashes">
+        {% for message in messages %}
+          <h3>{{message}}</h3>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    <form action='/create_user' method='POST'>
+        First Name:<input type="text" name="name_first"><br>
+        Last Name:<input type="text" name="name_last"><br>
+        Email:<input type="text" name="email_address"><br>
+        Password:<input type="text" name="password"><br>
+        Confirm Password:<input type="text" name="confirm_password"><br>
+        <input type='submit' value='submit'>
+    </form>
+  </body>
+</html>

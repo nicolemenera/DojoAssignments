@@ -8,20 +8,7 @@ app.secret_key = "llamallamallamamoo"
 @app.route('/', methods=['GET'])
 def index():
   return render_template("index.html")
-  
-  
-  
-#@app.route('/process', methods=['POST'])
-#def submit():
-#  if len(request.form['email']) < 1:
-#   flash("Email cannot be blank!")
-# elif not EMAIL_REGEX.match(request.form['email']):
-#   flash("Invalid Email Address!")
-# else:
-#   flash("Success!")
-# return redirect('/')
-    
-    
+
 @app.route('/emails', methods=['POST', 'GET'])
 def handle_request():
   if request.method == 'POST':
