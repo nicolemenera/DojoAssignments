@@ -17,12 +17,19 @@
       {% endif %}
     {% endwith %}
     <form action='/create_user' method='POST'>
-        First Name:<input type="text" name="name_first"><br>
-        Last Name:<input type="text" name="name_last"><br>
-        Email:<input type="text" name="email_address"><br>
-        Password:<input type="text" name="password"><br>
-        Confirm Password:<input type="text" name="confirm_password"><br>
-        <input type='submit' value='submit'>
+      First Name:<input type="text" name="name_first"><br>
+      Last Name:<input type="text" name="name_last"><br>
+      Email:<input type="text" name="email_address"><br>
+      Password:<input type="text" name="password"><br>
+      Confirm Password:<input type="text" name="confirm_password"><br>
+      <input type='submit' value='submit'>
     </form>
+    <hr>
+    <h2>Already Registered? Sign in below!</h2>
+
+    <form action='/log_in' method='POST'><br>
+      Email:<input type="text" name="email_address"><br>
+      Password:<input type="text" name="password"><br>
+      <input type='submit' value='Go'>
   </body>
 </html>

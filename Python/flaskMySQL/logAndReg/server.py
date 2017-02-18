@@ -54,7 +54,23 @@ def create_user():
       'pw_hash': pw_hash
     }
     mysql.query_db(query, data)
-    flash("Success!")
-  return redirect('/')
+    flash("Success! You may now log in below!")
+  return render_template('success.html', is_new=True)
+  
+  
+@app.route('/log_in', methods=['POST'])
+def log_in():
+  email = request.form['email_address']
+  password = request.form['password']
+  user_query = "SELECT * FROM users WHERE email = :email LIMIT 1"
+  query_data = {'email':email}
+  user = mysql.query_db (user_query, query_data)
+  if bcrypt.check_password_hash(user[0]['pw_hash'], password):
+    if "user" not in session:
+      session ["user"] = " "
+    return render_template('success.html', is_new=False)
+  else:
+    error = 'Password incorrect!'
+  return render_template('index.html')
 
 app.run(debug=True)

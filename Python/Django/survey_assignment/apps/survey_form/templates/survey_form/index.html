@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1>BIG ol' HAYYYY</h1>
+    <form action="/process" method="POST">
+      {% csrf_token %}
+      Your Name: <input type="text" name="name"><br>
+      Dojo Location: <select name="location">
+        <option>San Jose</option>
+        <option>Seattle</option>
+        <option>Houston</option>
+      </select><br>
+      Favorite Language: <select name="language">
+        <option>Javascript</option>
+        <option>Python</option>
+        <option>None</option>
+      </select><br>
+      Comment (optional):  <input type="field" name="comment"<br>
+      <button type="submit">Submit</button>
+    </form>
+    {% comment %}<h1>{{request.session.word}}</h1>{% endcomment %}
+    {% comment %}<form action="/generate" method = "POST">
+      {% csrf_token %}
+      <input type = "submit" value = "Generate">
+    </form>{% endcomment %}
+  </body>
+</html>
